@@ -1,0 +1,144 @@
+.topo{
+    background-color: #5F3DC4;
+    height: 40vh;
+
+}
+
+.topo > div{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topo > div > h2{
+    font-size: 24px;
+    color: coral;
+    font-weight: 600;
+}
+
+.topo > div > h1{
+    font-size: 34px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.topo > div > p{
+    font-size: 18px;
+    color: #fff;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main > aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    width: 100%;
+    margin: 20px auto;
+    min-height: 230px;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+main > aside > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    padding: 0px 10px 0px 20px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+main > aside > div > input{
+    width: 90%;
+    background-color: #0F1011;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+main > aside > div > button{
+    width: 90%;
+    background-color: #5F3DC4;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main > .artigos{
+
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main > .artigos > article{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+main > .artigos > article > h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main > .artigos > article > figure{
+    width: 100%;
+    max-width: 450px;
+}
+main > .artigos > article > figure > img{
+    width: 100%;
+}
+
+footer{
+    background-color: #0F1011;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns:1fr 20px 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    main > aside{
+        height: 300px;
+    }
+
+    main > .artigos{
+        grid-column: 3;
+    }
+   
+}
+
+@media (min-width: 1200px) {
+    main > .artigos{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
